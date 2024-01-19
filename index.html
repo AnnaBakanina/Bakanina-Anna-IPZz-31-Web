@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VivaDecor</title>
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,6 +13,8 @@
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <!-- phone input -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
+     <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
      <!-- MAIN STYLES -->
      <link rel="stylesheet" href="./scss/index.css">
 </head>
@@ -25,7 +28,7 @@
                 </a>
                 <nav class="header-menu">
                     <ul class="header-menu-list">
-                        <li class="header-menu-item">
+                        <li class="header-menu-item header-menu-item-current">
                             <a href="javascript:void(0)">Home</a>
                         </li>
                         <li class="header-menu-item">
@@ -53,10 +56,10 @@
             <div class="wrapper-container">
                 <div class="overview-top">
                     <div class="overview-top-info">
-                        <h1 class="title">
+                        <h1 class="title" data-aos="fade-right" data-aos-delay="0">
                             Interior Design
                         </h1>
-                        <p class="description">
+                        <p class="description" data-aos="fade-right" data-aos-delay="100">
                             Step into a world where the art of Interior Design is
                             meticulously crafted to bring together timeless elegance and cutting-edge
                             modern Innovation, allowing you to transform your living spaces into the epitome of luxury
@@ -69,20 +72,20 @@
                 </div>
                 <div class="overview-bottom">
                     <div class="overview-info">
-                        <button class="btn btn-black" id="btnOpenModalContact">
+                        <button class="btn btn-black" id="btnOpenModalContact" data-aos="fade-right" data-aos-delay="0">
                             Start Project
                         </button>
     
                         <ul class="overview-bottom-list">
-                            <li class="overview-bottom-item">
+                            <li class="overview-bottom-item" data-aos="fade-right" data-aos-delay="0">
                                 <h3 class="number">400+</h3>
                                 <p class="name">Project Complete</p>
                             </li>
-                            <li class="overview-bottom-item">
+                            <li class="overview-bottom-item" data-aos="fade-right" data-aos-delay="0">
                                 <h3 class="number">600+</h3>
                                 <p class="name">Satisfied Clients</p>
                             </li>
-                            <li class="overview-bottom-item">
+                            <li class="overview-bottom-item" data-aos="fade-right" data-aos-delay="0">
                                 <h3 class="number">100+</h3>
                                 <p class="name">Unique Styles</p>
                             </li>
@@ -99,13 +102,13 @@
         <section id="services" class="section services">
             <div class="wrapper-container">
                 <div class="services-wrapper">
-                    <div class="services-top">
+                    <div class="services-top" data-aos="fade-right">
                         <hr>
                         <h2 class="section-title">Our Services</h2>
                     </div>
                     <div class="services-bottom">
                         <ul class="services-list">
-                            <li class="services-list-item">
+                            <li class="services-list-item" data-aos="fade-right" data-aos-delay="0">
                                 <img width="72" height="70" class="img" src="images/svg/lighting-design-icon.svg"
                                  alt="icon"/>
                                  <div>
@@ -114,7 +117,7 @@
                                         accent lighting for a functional atmosphere</p>
                                 </div>
                             </li>
-                            <li class="services-list-item">
+                            <li class="services-list-item" data-aos="fade-right" data-aos-delay="500">
                                 <img width="72" height="70" class="img" src="images/svg/interior-design-icon.svg"
                                  alt="icon"/>
                                 <div>
@@ -123,7 +126,7 @@
                                         detail to bring your vision to life efficiently</p>
                                 </div>
                             </li>
-                            <li class="services-list-item">
+                            <li class="services-list-item" data-aos="fade-right" data-aos-delay="1000">
                                 <img width="72" height="70" class="img" src="images/svg/outdoor-design-icon.svg"
                                  alt="icon"/>
                                 <div>
@@ -146,13 +149,13 @@
                         <img width="711" height="711" src="images/our-approach-image.png" alt="image"/>
                     </div>
                     <div class="approach-info">
-                        <h2 class="section-title">Designing Your Dream With
+                        <h2 class="section-title" data-aos="fade-left" data-aos-delay="0">Designing Your Dream With
                             Brilliance</h2>
-                        <p class="description">Elevate your spaces with bespoke
+                        <p class="description" data-aos="fade-left" data-aos-delay="500">Elevate your spaces with bespoke
                             interior designs that reflect
                             your unique style and aspirations, crafted with precision and brilliance for an unforgettable
                             living experience</p>
-                        <button class="btn btn-black">Learn More</button>
+                        <button class="btn btn-black" data-aos="fade-left" data-aos-delay="700">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -163,20 +166,20 @@
             <div class="wrapper-container">
                 <div class="our-overview-wrapper">
                     <div class="our-overview-info">
-                        <h2 class="section-title">Designing Your Dream in Three
+                        <h2 class="section-title" data-aos="fade-right" data-aos-delay="0">Designing Your Dream in Three
                             Simple Steps</h2>
                         <ul class="our-overview-list">
-                            <li class="our-overview-list-item">
+                            <li class="our-overview-list-item" data-aos="fade-up" data-aos-delay="100">
                                 <h4 class="title">Start Project</h4>
                                 <p class="description">Embark on your design adventure by initiating
                                     your project. Share your vision and set the stage for a bespoke design experience</p>
                             </li>
-                            <li class="our-overview-list-item">
+                            <li class="our-overview-list-item" data-aos="fade-up" data-aos-delay="200">
                                 <h4 class="title">Craft</h4>
                                 <p class="description">Collaborate closely to achieve design excellence
                                     refining your vision and crafting brilliance into every aspect of your space</p>
                             </li>
-                            <li class="our-overview-list-item">
+                            <li class="our-overview-list-item" data-aos="fade-up" data-aos-delay="300">
                                 <h4 class="title">Execute</h4>
                                 <p class="description">Witness your vision becoming a reality as we
                                     execute the design plan with precision. Celebrate the joy of your newly transformed
@@ -194,68 +197,76 @@
         <!-- Reviews -->
         <section class="section reviews">
             <div class="wrapper-container">
-                <h2 class="section-title">What Our Customers Say About Us</h2>
+                <h2 class="section-title" data-aos="fade-right">What Our Customers Say About Us</h2>
                 <div class="reviews-wrapper">
                     <div class="swiper swiper-reviews">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide-content">
-                                <svg width="50" height="38" viewBox="0 0 50 38" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.563921 38V27.7727C0.563921 24.7543 1.1321 21.576 2.26847 18.2379C3.40483 14.8999 4.98509 11.7038 7.00923 8.64986C9.03338 5.59588 11.4126 2.98579 14.147 0.819603L22.0305 6.4659C19.8643 9.62642 18.0178 12.929 16.4908 16.3736C14.9638 19.8182 14.2003 23.5646 14.2003 27.6129V38H0.563921ZM27.7301 38V27.7727C27.7301 24.7543 28.2983 21.576 29.4347 18.2379C30.571 14.8999 32.1513 11.7038 34.1754 8.64986C36.1996 5.59588 38.5788 2.98579 41.3132 0.819603L49.1967 6.4659C47.0305 9.62642 45.184 12.929 43.657 16.3736C42.13 19.8182 41.3665 23.5646 41.3665 27.6129V38H27.7301Z"
-                                          fill="white"/>
-                                </svg>
-                                <div class="description">
-                                    Working with your design team was an absolute pleasure. The attention to detail and
-                                    creativity exceeded my expectations. Thank you for making my home beautiful!
-                                </div>
-                                <div class="author">
-                                    <div class="name">Sophie Carter</div>
-                                    <div class="location">New York, USA</div>
-                                </div>
-                            </div>
-                            <div>
-                                <svg width="50" height="38" viewBox="0 0 50 38" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.563921 38V27.7727C0.563921 24.7543 1.1321 21.576 2.26847 18.2379C3.40483 14.8999 4.98509 11.7038 7.00923 8.64986C9.03338 5.59588 11.4126 2.98579 14.147 0.819603L22.0305 6.4659C19.8643 9.62642 18.0178 12.929 16.4908 16.3736C14.9638 19.8182 14.2003 23.5646 14.2003 27.6129V38H0.563921ZM27.7301 38V27.7727C27.7301 24.7543 28.2983 21.576 29.4347 18.2379C30.571 14.8999 32.1513 11.7038 34.1754 8.64986C36.1996 5.59588 38.5788 2.98579 41.3132 0.819603L49.1967 6.4659C47.0305 9.62642 45.184 12.929 43.657 16.3736C42.13 19.8182 41.3665 23.5646 41.3665 27.6129V38H27.7301Z"
-                                          fill="white"/>
-                                </svg>
-                                <div class="description">
-                                    Exceptional service! From the initial consultation to the final reveal, your team
-                                    demonstrated professionalism and a keen eye for design. Highly recommend!
-                                </div>
-                                <div class="author">
-                                    <div class="name">James Bennett</div>
-                                    <div class="location">Toronto, Canada</div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-content">
+                                    <svg width="50" height="38" viewBox="0 0 50 38" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.563921 38V27.7727C0.563921 24.7543 1.1321 21.576 2.26847 18.2379C3.40483 14.8999 4.98509 11.7038 7.00923 8.64986C9.03338 5.59588 11.4126 2.98579 14.147 0.819603L22.0305 6.4659C19.8643 9.62642 18.0178 12.929 16.4908 16.3736C14.9638 19.8182 14.2003 23.5646 14.2003 27.6129V38H0.563921ZM27.7301 38V27.7727C27.7301 24.7543 28.2983 21.576 29.4347 18.2379C30.571 14.8999 32.1513 11.7038 34.1754 8.64986C36.1996 5.59588 38.5788 2.98579 41.3132 0.819603L49.1967 6.4659C47.0305 9.62642 45.184 12.929 43.657 16.3736C42.13 19.8182 41.3665 23.5646 41.3665 27.6129V38H27.7301Z"
+                                              fill="white"/>
+                                    </svg>
+                                    <div class="description">
+                                        Working with your design team was an absolute pleasure. The attention to detail and
+                                        creativity exceeded my expectations. Thank you for making my home beautiful!
+                                    </div>
+                                    <div class="author">
+                                        <div class="name">Sophie Carter</div>
+                                        <div class="location">New York, USA</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide-content">
-                                <svg width="50" height="38" viewBox="0 0 50 38" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.563921 38V27.7727C0.563921 24.7543 1.1321 21.576 2.26847 18.2379C3.40483 14.8999 4.98509 11.7038 7.00923 8.64986C9.03338 5.59588 11.4126 2.98579 14.147 0.819603L22.0305 6.4659C19.8643 9.62642 18.0178 12.929 16.4908 16.3736C14.9638 19.8182 14.2003 23.5646 14.2003 27.6129V38H0.563921ZM27.7301 38V27.7727C27.7301 24.7543 28.2983 21.576 29.4347 18.2379C30.571 14.8999 32.1513 11.7038 34.1754 8.64986C36.1996 5.59588 38.5788 2.98579 41.3132 0.819603L49.1967 6.4659C47.0305 9.62642 45.184 12.929 43.657 16.3736C42.13 19.8182 41.3665 23.5646 41.3665 27.6129V38H27.7301Z"
-                                          fill="white"/>
-                                </svg>
-                                <div class="description">
-                                    Working with your design team was an absolute pleasure. The attention to detail and
-                                    creativity exceeded my expectations. Thank you for making my home beautiful!
-                                </div>
-                                <div class="author">
-                                    <div class="name">Sophie Carter</div>
-                                    <div class="location">New York, USA</div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-content">
+                                    <svg width="50" height="38" viewBox="0 0 50 38" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.563921 38V27.7727C0.563921 24.7543 1.1321 21.576 2.26847 18.2379C3.40483 14.8999 4.98509 11.7038 7.00923 8.64986C9.03338 5.59588 11.4126 2.98579 14.147 0.819603L22.0305 6.4659C19.8643 9.62642 18.0178 12.929 16.4908 16.3736C14.9638 19.8182 14.2003 23.5646 14.2003 27.6129V38H0.563921ZM27.7301 38V27.7727C27.7301 24.7543 28.2983 21.576 29.4347 18.2379C30.571 14.8999 32.1513 11.7038 34.1754 8.64986C36.1996 5.59588 38.5788 2.98579 41.3132 0.819603L49.1967 6.4659C47.0305 9.62642 45.184 12.929 43.657 16.3736C42.13 19.8182 41.3665 23.5646 41.3665 27.6129V38H27.7301Z"
+                                              fill="white"/>
+                                    </svg>
+                                    <div class="description">
+                                        Exceptional service! From the initial consultation to the final reveal, your team
+                                        demonstrated professionalism and a keen eye for design. Highly recommend!
+                                    </div>
+                                    <div class="author">
+                                        <div class="name">James Bennett</div>
+                                        <div class="location">Toronto, Canada</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <svg width="50" height="38" viewBox="0 0 50 38" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.563921 38V27.7727C0.563921 24.7543 1.1321 21.576 2.26847 18.2379C3.40483 14.8999 4.98509 11.7038 7.00923 8.64986C9.03338 5.59588 11.4126 2.98579 14.147 0.819603L22.0305 6.4659C19.8643 9.62642 18.0178 12.929 16.4908 16.3736C14.9638 19.8182 14.2003 23.5646 14.2003 27.6129V38H0.563921ZM27.7301 38V27.7727C27.7301 24.7543 28.2983 21.576 29.4347 18.2379C30.571 14.8999 32.1513 11.7038 34.1754 8.64986C36.1996 5.59588 38.5788 2.98579 41.3132 0.819603L49.1967 6.4659C47.0305 9.62642 45.184 12.929 43.657 16.3736C42.13 19.8182 41.3665 23.5646 41.3665 27.6129V38H27.7301Z"
-                                          fill="white"/>
-                                </svg>
-                                <div class="description">
-                                    Exceptional service! From the initial consultation to the final reveal, your team
-                                    demonstrated professionalism and a keen eye for design. Highly recommend!
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-content">
+                                    <svg width="50" height="38" viewBox="0 0 50 38" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.563921 38V27.7727C0.563921 24.7543 1.1321 21.576 2.26847 18.2379C3.40483 14.8999 4.98509 11.7038 7.00923 8.64986C9.03338 5.59588 11.4126 2.98579 14.147 0.819603L22.0305 6.4659C19.8643 9.62642 18.0178 12.929 16.4908 16.3736C14.9638 19.8182 14.2003 23.5646 14.2003 27.6129V38H0.563921ZM27.7301 38V27.7727C27.7301 24.7543 28.2983 21.576 29.4347 18.2379C30.571 14.8999 32.1513 11.7038 34.1754 8.64986C36.1996 5.59588 38.5788 2.98579 41.3132 0.819603L49.1967 6.4659C47.0305 9.62642 45.184 12.929 43.657 16.3736C42.13 19.8182 41.3665 23.5646 41.3665 27.6129V38H27.7301Z"
+                                              fill="white"/>
+                                    </svg>
+                                    <div class="description">
+                                        Working with your design team was an absolute pleasure. The attention to detail and
+                                        creativity exceeded my expectations. Thank you for making my home beautiful!
+                                    </div>
+                                    <div class="author">
+                                        <div class="name">Sophie Carter</div>
+                                        <div class="location">New York, USA</div>
+                                    </div>
                                 </div>
-                                <div class="author">
-                                    <div class="name">James Bennett</div>
-                                    <div class="location">Toronto, Canada</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide-content">
+                                    <svg width="50" height="38" viewBox="0 0 50 38" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.563921 38V27.7727C0.563921 24.7543 1.1321 21.576 2.26847 18.2379C3.40483 14.8999 4.98509 11.7038 7.00923 8.64986C9.03338 5.59588 11.4126 2.98579 14.147 0.819603L22.0305 6.4659C19.8643 9.62642 18.0178 12.929 16.4908 16.3736C14.9638 19.8182 14.2003 23.5646 14.2003 27.6129V38H0.563921ZM27.7301 38V27.7727C27.7301 24.7543 28.2983 21.576 29.4347 18.2379C30.571 14.8999 32.1513 11.7038 34.1754 8.64986C36.1996 5.59588 38.5788 2.98579 41.3132 0.819603L49.1967 6.4659C47.0305 9.62642 45.184 12.929 43.657 16.3736C42.13 19.8182 41.3665 23.5646 41.3665 27.6129V38H27.7301Z"
+                                              fill="white"/>
+                                    </svg>
+                                    <div class="description">
+                                        Exceptional service! From the initial consultation to the final reveal, your team
+                                        demonstrated professionalism and a keen eye for design. Highly recommend!
+                                    </div>
+                                    <div class="author">
+                                        <div class="name">James Bennett</div>
+                                        <div class="location">Toronto, Canada</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -269,9 +280,9 @@
         <section id="contact" class="section contact">
             <div class="wrapper-container">
                 <div class="contact-wrapper">
-                    <h2 class="section-title">Subscribe to Our Newsletter for Design
+                    <h2 class="section-title" data-aos="fade-down" data-aos-delay="0">Subscribe to Our Newsletter for Design
                         Insights</h2>
-                    <p class="description">
+                    <p class="description" data-aos="fade-left" data-aos-delay="0">
                         Be the first to discover trends, inspirations, and special offers as we bring the
                         world of design directly to your inbox
                     </p>
@@ -422,6 +433,18 @@
     </div>
     
     <div class="overlay"></div>
-    
+
+    <!-- email service -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- phone input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/index.js"></script>
+
 </body>
 </html>
