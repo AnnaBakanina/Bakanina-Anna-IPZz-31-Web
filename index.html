@@ -301,6 +301,7 @@
                         <input id="emailInput" type="email" placeholder="Enter your email address">
                         <button id="subscribeBtn" class="btn btn-black">
                             Subscribe
+                            <i class="fa fa-spinner fa-spin"></i>
                         </button>
                     </div>
                 </div>
@@ -413,11 +414,11 @@
                 <form class="v-form" action="">
                     <div class="v-form-section">
                         <label>Name</label>
-                        <input type="text" placeholder="Enter name">
+                        <input id="modalName" type="text" placeholder="Enter name">
                     </div>
                     <div class="v-form-section">
                         <label>Email</label>
-                        <input type="email" placeholder="Enter email">
+                        <input id="modalEmail" type="email" placeholder="Enter email">
                     </div>
                     <div class="v-form-section">
                         <label>Phone number</label>
@@ -426,7 +427,7 @@
                 </form>
             </div>
             <div class="v-modal-footer">
-                <button class="btn btn-black" type="submit">Submit</button>
+                <button id="submitModalBtn" class="btn btn-black" type="submit">Submit</button>
                 <button class="btn btn-gray modal-close" type="submit">Close</button>
             </div>
         </div>

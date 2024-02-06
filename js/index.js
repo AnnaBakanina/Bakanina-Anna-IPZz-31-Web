@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    let phoneInputSelectedPostCode;
+
     // logic for burger menu =====================================
     let burgerMenu = document.getElementById('burger-menu'),
         body = document.body,
@@ -24,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             loader.style.display = "block";
 
             let templateParams = {
-                to_email: emailInputValue
+                user_email: emailInputValue
             };
 
             emailjs.send("service_njuc39p", "template_6o4ooam", templateParams) // user service and template
@@ -44,6 +46,45 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
     // end logic for email send =====================================
+
+    // logic for email send from modal =====================================
+
+    emailjs.init("Mw4TGFbfUw0yqGkqk"); // user key
+
+    document.getElementById("submitModalBtn").addEventListener("click", function () {
+        let emailInput = document.getElementById("modalEmail"),
+            emailInputValue = emailInput.value,
+            nameInput = document.getElementById("modalName"),
+            nameInputValue = nameInput.value,
+            phoneInput = document.getElementById("phoneInput"),
+            phoneInputValue = phoneInput.value;
+
+        if (isValidEmail(emailInputValue)) {
+
+            let templateParams = {
+                user_email: emailInputValue,
+                user_name: nameInputValue,
+                user_phone: '+' + phoneInputSelectedPostCode + phoneInputValue
+            };
+
+            emailjs.send("service_njuc39p", "template_ffmywl9", templateParams) // user service and template
+                .then(function (response) {
+                    console.log("Email sent successfully:", response);
+                }, function (error) {
+                    console.log("Failed to send email:", error);
+                })
+                .then(function() {
+                    emailInput.value = '';
+                    nameInput.value = '';
+                    phoneInput.value = '';
+                });
+
+        } else {
+            alert("Please enter a valid email address");
+        }
+    });
+
+    // end logic for email send from modal =====================================
 
     // logic for swiper =====================================
     const swiperReviews = new Swiper('.swiper.swiper-reviews', {
@@ -108,7 +149,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     phoneInput.addEventListener("countrychange", function () {
         const countryCode = iti.getSelectedCountryData().iso2;
-        console.log("Selected country code:", countryCode);
+        phoneInputSelectedPostCode = iti.getSelectedCountryData().dialCode;
+        console.log("Selected country code:", countryCode, '+' + phoneInputSelectedPostCode);
     });
     // end logic for input phone =====================================
 });
